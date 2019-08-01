@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Viết chương trình kiểm tra đăng nhập hệ thống của người dùng theo yêu cầu sau
+    function checkLogin() {
+        let userName = prompt("Who's there?");
+        if (userName == "Admin") {
+            let pass = prompt("enter pass:");
+            if (pass == "TheMaster"){
+                alert("wellcome")
+            }else if (pass == ""){
+                alert("Canceled.");
+            }else {
+                alert("wrong password")
+            }
+        }else if (userName == ""){
+            alert("Canceled");
+        }else {
+            alert("I don'nt know you");
+        }
+    }
+    checkLogin();
+
+</script>
+
+</body>
+</html>
